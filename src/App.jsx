@@ -1,7 +1,13 @@
+import Layout from "./components/layout/Layout";
+import AppProvider from "./context/AppContext";
 
-export default function App(){
 
-  return(
-    <h1>Sky Dash</h1>
-  )
+function App() {
+  return (
+    <AppProvider>
+        <Layout />
+    </AppProvider>
+  );
 }
+
+export default App;
